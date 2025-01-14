@@ -1,0 +1,1 @@
+function foo(array $arr): int {  foreach ($arr as $key => $value) {    if ($value === 'a') {      unset($arr[$key]); //This is dangerous. Consider using array_filter instead  }  }  return count($arr);}
