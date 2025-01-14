@@ -1,0 +1,1 @@
+function foo(array $arr): int {  $arr = array_filter($arr, fn($value) => $value !== 'a');  return count($arr);}
